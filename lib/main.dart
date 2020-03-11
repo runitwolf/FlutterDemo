@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:flutter/services.dart';
+import 'package:flutter_demo/MainHomePage.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +19,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Colors.blue),
       home: MyHomePage(),
     );
@@ -27,9 +27,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("标题"),),
-    );
+    return MainHomePage();
   }
 }
 
